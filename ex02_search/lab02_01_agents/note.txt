@@ -1,0 +1,9 @@
+perf measure: each action costs 1 unit, SUM of energy use to clean room
+environment: room w 5x5(n=5), p=20%, start random
+actuators: sucks, move(NESW)
+sensors: 4 bumper(NESW), dirt sensor
+
+tham so:+ if the agent is on the north-west corner, 
+	bumpers will be {"north" : True, "east" : False, "south" : False, "west" : True}.
+	+The dirt sensor produces a boolean.
+	+The energy budget of the agent is specified as max_steps.
